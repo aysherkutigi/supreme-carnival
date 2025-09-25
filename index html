@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Flood Alert System</title>
+  <!-- Leaflet CSS (map) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <!-- Chart.js (forecast chart) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌊 AI Flood Alert System</h1>
+  </header>
+
+  <section class="hero">
+    <h2>Stay Safe with AI Predictions</h2>
+    <p>Search for your location to see flood alerts.</p>
+    <input id="searchInput" type="text" placeholder="Search location...">
+  </section>
+
+  <section>
+    <h2 style="text-align:center;">Flood Map</h2>
+    <div id="map"></div>
+  </section>
+
+  <section>
+    <h2 style="text-align:center;">Recent Alerts</h2>
+    <div id="alertContainer"></div>
+  </section>
+
+  <section>
+    <h2 style="text-align:center;">7-Day Rainfall Forecast</h2>
+    <canvas id="rainChart"></canvas>
+  </section>
+
+  <footer>
+    <p>© 2025 AI Flood Alert | Built with HTML, CSS & JS</p>
+  </footer>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
